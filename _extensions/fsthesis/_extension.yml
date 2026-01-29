@@ -43,5 +43,3 @@ contributes:
       toc-title: "<b>Sections</b>"
       html-math-method: katex
       published-title: "Last updated"
-      include-in-header:
-        file: fonts.html
