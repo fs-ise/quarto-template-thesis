@@ -1,17 +1,3 @@
-::: {.content-visible when-format="html"}
-
-A thesis submitted for the degree of {{< meta degreetype >}} at Monash University, {{< meta affiliation >}}.
-
-:::
-
-# Copyright notice {-}
-
-```{r}
-#| output: asis
-cat("Produced on",format(Sys.Date(), "%e %B %Y.\n\n"))
-cat("© {{< meta author >}} (",format(Sys.Date(), "%Y"),").", sep="")
-```
-
 # Abstract {-}
 
 The abstract should outline the main approach and findings of the thesis and must not be more than 500 words.
@@ -23,6 +9,8 @@ For an honours thesis, you can remove the rest of this file apart from the last 
 # Declaration {-}
 
 > Use only one of the following declarations (Standard thesis or Thesis including published works declaration) and remove the other.
+
+<!--
 
 ### Standard thesis
 
@@ -59,39 +47,6 @@ This thesis includes ?? original papers published in peer reviewed journals and 
 In the case of (??insert chapter numbers) my contribution to the work involved the following:
 
 
-```{r}
-#| message: false
-#| echo: false
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-tab <- tribble(
-  ~`Thesis chapter`, ~`Publication title`, ~Status, ~`Nature and % of student contribution`, ~`Nature and % of coauthors' contribution`, ~`Coauthors are Monash students`,
-  2, "The life cycle of Mongolian crickets", "Submitted", "Concept and data analysis, writing first draft: 60%", "Shu Xu, input into manuscript: 25%; Eddie Betts, input into manuscript: 15%", "Shu Xu: No; Eddie Betts: Yes"
-)
-```
-
-::: {.content-visible when-format="html"}
-
-```{r}
-tab |>
-  kable() |>
-  row_spec(0, align = "l")
-```
-
-:::
-
-::: {.content-visible when-format="pdf"}
-
-```{r}
-tab |>
-  kable(booktabs = TRUE, format = "latex") |>
-  kable_styling(full_width = TRUE, font_size = 10, latex_options = "scale_down") |>
-  column_spec(1, width = "1.2cm") |>
-  column_spec(c(2, 4:6), width = "2.6cm") |>
-  row_spec(0, align = "l", bold = TRUE)
-```
-
 :::
 
 I have / have not renumbered sections of submitted or published papers in order to generate a consistent presentation within the thesis.
@@ -109,10 +64,13 @@ Main Supervisor name:
 Main Supervisor signature:
 
 Date:
+-->
 
 # Acknowledgements {-}
 
 I would like to thank my pet goldfish for ...
+
+<!--
 
 > In accordance with Chapter 7.1.4 of the research degrees handbook, if you have engaged the services of a professional editor, you must provide their name and a brief description of the service rendered. If the professional editor's current or former area of academic specialisation is similar your own, this too should be stated as it may suggest to examiners that the editor's advice to the student has extended beyond guidance on English expression to affect the substance and structure of the thesis.
 
@@ -125,9 +83,9 @@ I would like to thank my pet goldfish for ...
 > > “This research was supported by an Australian Government Research Training Program (RTP) Scholarship.”
 
 > You may also wish to acknowledge significant and substantial contribution made by others to the research, work and writing represented and/or reported in the thesis. These could include significant contributions to: the conception and design of the project; non-routine technical work; analysis and interpretation of research data; drafting significant parts of the work or critically revising it to contribute to the interpretation.
+-->
 
 <!--
 The following line is required to re-set page numbering after preliminary material in the pdf output. Do not remove
 -->
-
 \clearpage\pagenumbering{arabic}\setcounter{page}{1}

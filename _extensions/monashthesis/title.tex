@@ -2,14 +2,21 @@
 \pagenumbering{roman}
 {\sf\thispagestyle{empty}%
   \null\vskip-.4cm%
-  \centerline{\includegraphics[width=12cm]{monash-logo}}
+  \centerline{\includegraphics[width=6cm]{fs_logo_blue.pdf}}
   \vspace*{4cm}
   \begin{center}\fontsize{24}{28}\sf
      \textbf{$title$}\\[2cm]
-     \fontsize{18}{20}\sf $author$\\[0.2cm]
-     \fontsize{13}{15}\sf $degrees$
+		{\fontsize{13}{15}\sf
+			\makebox[0pt][c]{%
+				\begin{tabular}{r@{: }l}
+					Name               & $author$ \\
+					Student ID         & $stud_id$ \\
+					Date of submission & $submission_date$ \\
+					Thesis advisor     & $advisor$
+			\end{tabular}}
+		}
      \vfill
-     \fontsize{13}{15}\sf A thesis submitted for the degree of\\ $degreetype$\\ at Monash University in \number\the\year\\
+     \fontsize{13}{15}\sf A thesis submitted for the degree of\\ $degreetype$\\ at Frankfurt School of Finance \& Management \\
      $affiliation$
   \end{center}
   \newpage\mbox{}\thispagestyle{empty}\newpage

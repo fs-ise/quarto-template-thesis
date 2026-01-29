@@ -1,10 +1,10 @@
-title: Monash Thesis Format Template
-author: Rob J Hyndman
+title: Frankfurt School Thesis Format Template
+author: Gerit Wagner
 version: 2.0.0
 contributes:
   formats:
     common:
-      date-format: "D MMMM YYYY"
+      date-format: "YYYY-MM-DD"
       number-depth: 2
       toc-depth: 2
       number-sections: true

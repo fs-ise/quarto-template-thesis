@@ -2,8 +2,8 @@ project:
   type: book
 
 book:
-  title: "This is my thesis"
-  author: "Susan Su"
+  title: "Thesis title"
+  author: "Student Name"
   chapters:
     - text: "Front matter"
       file: index.qmd
@@ -13,12 +13,14 @@ book:
   sidebar:
     style: "docked"
 
-bibliography: thesisrefs.bib
-csl: american-statistical-association.csl
-degreetype: Doctor of Philosophy
-submitted: 2024
-affiliation: Department of Econometrics & Business Statistics
-degrees: 'B.Sc. (Hons), University of Tangambalanga'
+bibliography: references.bib
+csl: apa.csl
+
+degreetype: Bachelor of Science
+submission_date: 2026-09-01
+stud_id: 12345678
+advisor: "Prof. Dr. Gerit Wagner"
+affiliation: Management Department
 
 format:
   monashthesis-html: default

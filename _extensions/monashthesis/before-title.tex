@@ -14,21 +14,31 @@
 
 %% HEADERS AND FOOTERS
 \usepackage{fancyhdr}
+
 \pagestyle{fancy}
-\rfoot{\Large\sffamily\raisebox{-0.1cm}{\textbf{\thepage}}}
+\fancyhf{} % clear header/footer
+
+% (optional) keep title in header; delete these 3 lines if you want no header at all
 \makeatletter
 \lhead{\textsf{\expandafter{\@title}}}
 \makeatother
-\rhead{}
-\cfoot{}
-\setlength{\headheight}{15pt}
-\renewcommand{\headrulewidth}{0.4pt}
-\renewcommand{\footrulewidth}{0.4pt}
-\fancypagestyle{plain}{%
-\fancyhf{} % clear all header and footer fields
-\fancyfoot[C]{\sffamily\thepage} % except the center
+
+% centered page number everywhere
+\fancyfoot[C]{\sffamily\thepage}
+
+% no header/footer rules (no hlines)
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}}
+\renewcommand{\footrulewidth}{0pt}
+
+% make 'plain' pages match exactly (chapter starts, ToC, etc.)
+\fancypagestyle{plain}{%
+	\fancyhf{}
+	\fancyfoot[C]{\sffamily\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
+
+\setlength{\headheight}{15pt}
 
 %% MATHS
 \usepackage{bm,amsmath}
