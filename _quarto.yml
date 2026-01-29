@@ -23,5 +23,5 @@ advisor: "Prof. Dr. Gerit Wagner"
 affiliation: Management Department
 
 format:
-  monashthesis-html: default
-  monashthesis-pdf: default
+  fsthesis-html: default
+  fsthesis-pdf: default

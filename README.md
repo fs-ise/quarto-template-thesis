@@ -22,6 +22,19 @@ quarto render
 
 ## Preview
 
+<!--
+
+sudo apt-get install -y imagemagick ghostscript
+
+magick -density 300 "template.pdf[0]" \
+  -resize x1000 \
+  -bordercolor grey92 -border 25x35 \
+  \( +clone -background black -shadow 60x6+10+10 \) \
+  +swap -background grey92 -layers merge +repage \
+  "template.png"
+
+-->
+
 [![](examples/template.png)](examples/template.pdf)
 
 
