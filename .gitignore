@@ -5,5 +5,5 @@
 *_files/
 *_cache/
 fonts.html
-
+.cache/*
 **/*.quarto_ipynb
