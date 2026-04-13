@@ -1,6 +1,6 @@
 # Frankfurt School Thesis Template
 
-This is a Quarto template that assists you in creating a Frankfurt School thesis. 
+This is a Quarto template that assists you in creating a Frankfurt School thesis.
 
 ## Installation
 
@@ -10,9 +10,7 @@ You can create a thesis based on this template with the following command:
 quarto use template fs-ise/quarto-template-thesis
 ```
 
-It is recommended to install the template in the same directory (not in a subdirectory).
-
-This will install the extension and create the files that you can use as a starting place for your thesis.
+It is recommended to install the template in the same directory (*not in a subdirectory*).
 
 ## Use
 
@@ -38,7 +36,6 @@ magick -density 300 "template.pdf[0]" \
 -->
 
 [![](examples/template.png)](examples/template.pdf)
-
 
 ## Attribution
 
